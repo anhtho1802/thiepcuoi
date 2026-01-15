@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiệp Cưới: Thanh Hải & Dương Quỳnh</title>
+    <!-- Font chữ sang trọng -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Ảnh đại diện khi chia sẻ link -->
+<meta property="og:title" content="Thiệp Cưới Thanh Hải & Dương Quỳnh">
+<meta property="og:description" content="Trân trọng kính mời bạn đến dự lễ thành hôn của chúng tôi vào ngày 27/02/2026">
+<meta property="og:image" content="img/DSC06693.jpg">
+<meta property="og:url" content="https://thiepcuoihaiquynh.com">
+<meta property="og:type" content="website">
+
+</head>
+<body>
+
+    <section class="hero-wrapper">
+        <!-- 3 Cột ảnh nền -->
+        <div class="background-grid">
+            <div class="bg-column"></div>
+            <div class="bg-column"></div>
+            <div class="bg-column"></div>
+        </div>
+
+        <!-- Tấm thiệp giữa (Không mờ) -->
+        <div class="card-overlay">
+            <div class="invitation-card">
+                <div class="names">
+                    <h1>Dương Quỳnh</h1>
+                    <span class="ampersand">&</span>
+                    <h1>Thanh Hải</h1>
+                </div>
+
+                <div class="heart-separator">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="event-info">
+                    <h3 class="event-title">Lễ Vu Quy</h3>
+                    <div class="date-row">
+                        <span class="date-side">Thứ 6</span>
+                        <div class="line"></div>
+                        <span class="date-main">27/02</span>
+                        <div class="line"></div>
+                        <span class="date-side">Năm 2026</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <audio id="bg-music" autoplay muted playsinline loop>
+            <source src="music/I Do.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+
+    <script>
+    const audio = document.getElementById('bg-music');
+    let isPlaying = false;
+
+    // Phát nhạc khi click bất kỳ vị trí nào trên trang
+    document.addEventListener('click', () => {
+        if (!isPlaying) {
+            audio.muted = false;
+            audio.play();
+            isPlaying = true;
+        }
+    }, { once: true });
+</script>
+
+<!-- TRANG 2: GIỚI THIỆU -->
+    <section class="couple-section">
+        <h2 class="section-title">Giới Thiệu</h2>
+
+        <div class="couple-container">
+            <!-- Thẻ Cô Dâu -->
+            <div class="couple-card">
+                <img src="img/DSC06638.jpg" alt="Dương Quỳnh"> <!-- Thay bằng ảnh cô dâu của bạn -->
+                <div class="couple-info">
+                    <h3>Dương Thị Quỳnh</h3>
+                    <p class="side-label">Nhà Gái</p>
+                    <div class="parents">
+                        <p>Bố: Dương Tuấn Anh</p>
+                        <p>Mẹ: Trần Thị Lơ</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thẻ Chú Rể -->
+            <div class="couple-card">
+                <img src="img/DSC07514.jpg" alt="Thanh Hải"> <!-- Thay bằng ảnh chú rể của bạn -->
+                <div class="couple-info">
+                    <h3>Nguyễn Thanh Hải</h3>
+                    <p class="side-label">Nhà Trai</p>
+                    <div class="parents">
+                        <p>Bố: Nguyễn Thanh Hà</p>
+                        <p>Mẹ: Nguyễn Thị Hương</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- TRANG 3: THÔNG TIN HÔN LỄ -->
+<section class="invitation-details">
+    <div class="details-container">
+        <h2 class="invite-header">TRÂN TRỌNG KÍNH MỜI</h2>
+        <p class="invite-subheader">TỚI DỰ BỮA CƠM THÂN MẬT CHUNG VUI CÙNG GIA ĐÌNH CHÚNG TÔI</p>
+
+        <div class="event-cards-wrapper">
+            <!-- Thẻ Nhà Trai -->
+            <div class="event-card">
+                <div class="arch-frame">
+                    <img src="img/DSC08001.jpg" alt="Nhà Trai"> <!-- Thay ảnh nhà trai -->
+                </div>
+                <h3 class="side-title">NHÀ GÁI</h3>
+                <p class="address">Thôn Cộng Hòa - Xã Tiên Hưng - Tỉnh Hưng Yên</p>
+                <p class="time">Vào lúc 16:00</p>
+                
+                <div class="calendar-design">
+                    <div class="cal-line-group">
+                        <div class="h-line"></div>
+                        <span class="cal-label">Thứ 5</span>
+                        <div class="h-line"></div>
+                    </div>
+                    <div class="cal-main-date">26/02</div>
+                    <div class="cal-line-group">
+                        <div class="h-line"></div>
+                        <span class="cal-label">Năm 2026</span>
+                        <div class="h-line"></div>
+                    </div>
+                </div>
+
+                <p class="lunar-date">Tức ngày 10 tháng 01 năm Bính Ngọ</p>
+                <a href="https://maps.app.goo.gl/XiL8d5imcf83aXQv9" class="map-icon" target="_blank">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                </a>
+            </div>
+
+            <!-- Thẻ Nhà Gái -->
+            <div class="event-card">
+                <div class="arch-frame">
+                    <img src="img/DSC07407.jpg" alt="Nhà Gái"> <!-- Thay ảnh nhà gái -->
+                </div>
+                <h3 class="side-title">LỄ VU QUY</h3>
+                <p class="address">Thôn Cộng Hòa - Xã Tiên Hưng - Tỉnh Hưng Yên</p>
+                <p class="time">Vào lúc 10:00</p>
+                
+                <div class="calendar-design">
+                    <div class="cal-line-group">
+                        <div class="h-line"></div>
+                        <span class="cal-label">Thứ 6</span>
+                        <div class="h-line"></div>
+                    </div>
+                    <div class="cal-main-date">27/02</div>
+                    <div class="cal-line-group">
+                        <div class="h-line"></div>
+                        <span class="cal-label">Năm 2026</span>
+                        <div class="h-line"></div>
+                    </div>
+                </div>
+
+                <p class="lunar-date">Tức ngày 11 tháng 1 năm Bính Ngọ</p>
+                <a href="https://maps.app.goo.gl/XiL8d5imcf83aXQv9" class="map-icon" target="_blank">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- TRANG 4: ALBUM ẢNH CƯỚI -->
+<section class="album-section">
+    <div class="album-header">
+        <h2 class="album-title">ALBUM ẢNH CƯỚI</h2>
+        <p class="album-subtitle">Những khoảnh khắc đẹp của chúng tôi</p>
+    </div>
+
+    <div class="photo-grid">
+        <!-- Lặp lại khối này 16 lần cho 16 ảnh -->
+        <div class="photo-item">
+            <img src="img/DSC08139.jpg" alt="Wedding Photo 1">
+        </div>
+        <div class="photo-item">
+            <img src="img/DSC07942.jpg" alt="Wedding Photo 2">
+        </div>
+        <div class="photo-item">
+            <img src="img/DSC07777.jpg" alt="Wedding Photo 3">
+        </div>
+        <div class="photo-item">
+            <img src="img/DSC08069.jpg" alt="Wedding Photo 4">
+        </div>
+        <!-- ... tiếp tục cho đến album16.jpg ... -->
+        <div class="photo-item"><img src="img/DSC06947.jpg" alt="5"></div>
+        <div class="photo-item"><img src="img/DSC07077.jpg" alt="6"></div>
+        <div class="photo-item"><img src="img/DSC07428.jpg" alt="7"></div>
+        <div class="photo-item"><img src="img/DSC06780.jpg" alt="8"></div>
+        <div class="photo-item"><img src="img/DSC08702.jpg" alt="9"></div>
+        <div class="photo-item"><img src="img/DSC08751.jpg" alt="10"></div>
+        <div class="photo-item"><img src="img/DSC08761.jpg" alt="11"></div>
+        <div class="photo-item"><img src="img/DSC08776.jpg" alt="12"></div>
+        <div class="photo-item"><img src="img/DSC08290.jpg" alt="13"></div>
+        <div class="photo-item"><img src="img/DSC08330.jpg" alt="14"></div>
+        <div class="photo-item"><img src="img/DSC08445.jpg" alt="15"></div>
+        <div class="photo-item"><img src="img/DSC08534_1.jpg" alt="16"></div>
+    </div>
+</section>
+
+<!-- TRANG CUỐI: CẢM ƠN (KHUNG VỪA KHÍT ẢNH) -->
+<section class="thank-you-wrapper">
+    <div class="thank-you-frame">
+        <!-- Ảnh thực tế của bạn -->
+        <img src="img/DSC07407.jpg" alt="Thank You" class="final-photo">
+        
+        <!-- Lớp phủ nội dung -->
+        <div class="thank-you-overlay">
+            <div class="thank-you-content">
+                <h2 class="thank-you-title">Thank you!</h2>
+                <p class="thank-you-message">
+                    Sự hiện diện của bạn sẽ khiến hôn lễ của chúng tôi trở nên ý nghĩa hơn bao giờ hết!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</body>
+</html>
