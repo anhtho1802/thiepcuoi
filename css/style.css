@@ -31,7 +31,7 @@ body, html {
 
 .bg-column {
     flex: 1;
-    background-image: url('/img/DSC06693.jpg'); /* Thay link ảnh thật vào đây */
+    background-image: url('https://i.ibb.co/20yZ8X3M/DSC06693.jpg'); /* Thay link ảnh thật vào đây */
     background-size: cover;
     background-position: center;
     border-right: 1px solid rgba(255, 255, 255, 0.2);
@@ -196,7 +196,7 @@ body {
 
 .bg-column {
     flex: 1;
-    background-image: url('/img/DSC06693.jpg'); 
+    background-image: url('https://i.ibb.co/20yZ8X3M/DSC06693.jpg'); 
     background-size: cover;
     background-position: center;
     border-right: 1px solid rgba(255, 255, 255, 0.2);
@@ -234,7 +234,7 @@ body, html {
 .bg-column {
     flex: 1;
     /* LẤY ẢNH TỪ FOLDER IMAGES */
-    background-image: url('/img/DSC06693.jpg'); 
+    background-image: url('https://i.ibb.co/20yZ8X3M/DSC06693.jpg'); 
     background-size: cover;
     background-repeat: no-repeat;
     border-right: 1px solid rgba(255, 255, 255, 0.2);
