@@ -16,6 +16,23 @@
 
 </head>
 <body>
+<div id="envelope-overlay">
+    <div class="envelope-wrapper" id="main-envelope">
+        <div class="envelope">
+            <div class="flap"></div>
+            <div class="body"></div>
+            <div class="letter">
+                <div class="letter-content">
+                    <h2 style="font-family: 'Playfair Display', serif; font-size: 20px; color: #4a6775;">Dương Quỳnh & Thanh Hải</h2>
+                    <p style="font-size: 14px;">27 . 02 . 2026</p>
+                                        <p style="font-family: 'Dancing Script', cursive; font-size: 18px;">Thân Mời</p>
+                </div>
+            </div>
+        </div>
+        <!-- Nút bấm đặt ở đây để không bị lớp nào che khuất -->
+        <button id="open-btn">MỞ THIỆP</button>
+    </div>
+</div>
 
     <section class="hero-wrapper">
         <!-- 3 Cột ảnh nền -->
@@ -229,6 +246,40 @@
         </div>
     </div>
 </section>
+
+<script>
+    // Đợi trang load xong
+    window.addEventListener('load', function() {
+        const btn = document.getElementById('open-btn');
+        const wrapper = document.getElementById('main-envelope');
+        const overlay = document.getElementById('envelope-overlay');
+        const audio = document.getElementById('bg-music');
+
+        if(btn) {
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation(); // Ngăn lỗi lan truyền sự kiện
+                
+                // 1. Mở thiệp
+                wrapper.classList.add('open');
+                btn.innerHTML = "ĐANG MỞ...";
+                
+                // 2. Phát nhạc
+                if (audio) {
+                    audio.muted = false;
+                    audio.play();
+                }
+
+                // 3. Biến mất màn hình chào
+                setTimeout(() => {
+                    overlay.classList.add('fade-out');
+                    setTimeout(() => {
+                        overlay.style.display = 'none';
+                    }, 1000);
+                }, 2000);
+            });
+        }
+    });
+</script>
 
 
 </body>
