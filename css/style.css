@@ -58,7 +58,7 @@ body, html {
 .letter {
     position: absolute;
     bottom: 10px;
-    left: 15px;
+    left: 10px;
     width: 420px;
     height: 280px;
     background: #ffffff;
